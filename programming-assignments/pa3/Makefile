@@ -1,5 +1,5 @@
 CPPFLAGS = -std=c++11
-SRCS = main.cpp board.cpp boardtree.cpp hashtable.cpp
+SRCS = main_program.cpp board.cpp boardtree.cpp hashtable.cpp
 OBJS = $(SRCS:.cpp=.o)
 DEPS = $(OBJS:.o=.d)
 COMPILER = g++
