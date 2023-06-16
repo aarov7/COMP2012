@@ -1,5 +1,5 @@
-CPPFLAGS = -fsanitize=address,leak,undefined # -static-libgcc -static-libstdc++
-COMPILER = g++11
+CPPFLAGS = -std=c++11
+COMPILER = g++
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 DEPS = $(SRCS:.cpp=.d)
@@ -15,6 +15,6 @@ lab7.exe: $(OBJS)
 -include $(DEPS)
 
 clean:
-	rm -f *.o *.exe *.d
+	del *.o *.exe *.d
 # (Windows) del *.o *.exe *.d
 # (Linux or MacOS) rm -f *.o *.exe *.d
