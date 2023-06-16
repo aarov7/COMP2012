@@ -1,0 +1,1 @@
+print(list(range(20,10,-10)))
